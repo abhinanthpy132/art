@@ -35,18 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Smooth Scroll for Hero Indicator
-    const scrollIndicator = document.querySelector('.scroll-indicator');
-    if (scrollIndicator) {
-        scrollIndicator.addEventListener('click', () => {
-            const nextSection = document.querySelector('section:nth-of-type(2)');
-            if (nextSection) {
-                nextSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-        // Make it pointer-cursor so user knows it's clickable
-        scrollIndicator.style.cursor = 'pointer';
-    }
+
 
     // Add to Basket Buttons (Shop & Product Pages)
     const addToBasketBtns = document.querySelectorAll('.btn-shop-add, .add-to-cart-btn');
@@ -82,3 +71,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
