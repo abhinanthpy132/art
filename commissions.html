@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 
@@ -31,7 +32,7 @@
                 <li>
                     <a href="#" class="active">Commissions ▾</a>
                     <ul>
-                        <li><a href="gallery.html">Portrait Gallery</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="commissions.html" class="active">Commission Details</a></li>
                     </ul>
                 </li>
@@ -41,43 +42,17 @@
         </nav>
     </header>
 
-    <div class="commission-hero" style="background-image: url('assets/images/hero-commissions.png');">
+    <div class="commission-hero" style="background-image: url('assets/images/cp13.jpeg');">
         <div class="hero-content">
             <h1>BOOK A COMMISSION</h1>
             <div class="hero-buttons">
-                <a href="gallery.html" class="btn-hero-outline">EXPLORE PREVIOUS WORK</a>
-                <a href="#contact" class="btn-hero-outline">BOOK YOUR COMMISSION</a>
+                <a href="contact.html" class="btn-hero">BOOK NOW</a>
             </div>
         </div>
     </div>
 
     <main class="commissions-main">
         <div class="container">
-            <!-- Portrait Types -->
-            <section class="commission-section text-center">
-                <h2>WHAT TYPE OF PORTRAIT CAN I ORDER?</h2>
-                <div class="process-steps">
-                    <div class="step">
-                        <h3>PET PORTRAIT</h3>
-                        <p>Capture your beloved pet's likeness in your very own coloured pencil portrait. This could
-                            also be a perfect gift for another pet owner that you know.</p>
-                    </div>
-                    <div class="step-divider"></div>
-                    <div class="step">
-                        <h3>WILDLIFE PORTRAIT</h3>
-                        <p>Do you have a particular wildlife animal that you'd like an original drawing of? I'd be happy
-                            to work with you to create this portrait for you.</p>
-                    </div>
-                    <div class="step-divider"></div>
-                    <div class="step">
-                        <h3>OTHER PORTRAIT</h3>
-                        <p>I'm always looking to draw new things so feel free to ask me about drawing something other
-                            than animals - I have been commissioned to draw people & buildings in the past.</p>
-                    </div>
-                </div>
-            </section>
-
-            <hr class="section-divider">
 
             <!-- Step 1: Choose & Pricing -->
             <section class="commission-section" id="step1">
@@ -92,33 +67,40 @@
                         <thead>
                             <tr>
                                 <th>Size</th>
-                                <th>Mount Only</th>
-                                <th>Framed</th>
+                                <th>Graphite</th>
+                                <th>Colour</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>10" x 8"</td>
+                                <td>A4</td>
+                                <td>£60</td>
+                                <td>£80</td>
+                            </tr>
+                            <tr>
+                                <td>A3</td>
+                                <td>£100</td>
+                                <td>£140</td>
+                            </tr>
+                            <tr>
+                                <td>A2</td>
                                 <td>£150</td>
-                                <td>-</td>
+                                <td>£200</td>
                             </tr>
                             <tr>
-                                <td>12" x 10"</td>
-                                <td>£195</td>
-                                <td>£240</td>
-                            </tr>
-                            <tr>
-                                <td>16" x 12"</td>
+                                <td>A1</td>
+                                <td>£200</td>
                                 <td>£250</td>
-                                <td>£300</td>
-                            </tr>
-                            <tr>
-                                <td>20" x 16"</td>
-                                <td>£320</td>
-                                <td>£395</td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+
+                <div class="info-box">
+                    <h4>FRAMING & FIXATIVE COATING</h4>
+                    <p>Each portrait is treated with a professional fixative coating and allowed sufficient drying time
+                        to prevent smudging and ensure longevity. This process guarantees your artwork arrives in
+                        perfect condition.</p>
                 </div>
 
                 <div class="info-box">
@@ -149,9 +131,8 @@
                         <p>A lot of my previous commissions are of pets who have sadly passed. If this is the case with
                             your pet then send me whatever photos you have and I will see what I can do.</p>
                     </div>
-                    <div class="info-image-grid">
-                        <img src="assets/images/portrait-beagle.png" alt="Good Photo Example">
-                        <img src="assets/images/portrait-scruffy.png" alt="Scruffy Dog Example">
+                    <div class="info-image-grid" style="grid-template-columns: 1fr;">
+                        <img src="assets/images/reference_comparison.jpg" alt="Reference Photo vs Art Comparison">
                     </div>
                 </div>
             </section>
@@ -159,12 +140,9 @@
             <!-- Steps 3, 4, 5 -->
             <section class="commission-section">
                 <!-- Step 3 (Image Left) -->
-                <div class="step-block">
+                <div class="step-block text-center" style="max-width: 800px; margin: 0 auto 60px auto;">
                     <h3 class="step-title">STEP 3 : SECURING YOUR BOOKING</h3>
-                    <div class="info-grid">
-                        <div class="info-image">
-                            <img src="assets/images/wildlife-honeycomb.png" alt="Honeycomb Art">
-                        </div>
+                    <div>
                         <div class="info-text">
                             <p>Once you've chosen your portrait size and reference photo, it is time to secure your
                                 booking. If
@@ -181,9 +159,9 @@
                 </div>
 
                 <!-- Step 4 (Image Right) -->
-                <div class="step-block">
+                <div class="step-block text-center" style="max-width: 800px; margin: 0 auto 60px auto;">
                     <h3 class="step-title">STEP 4 : CREATING YOUR PORTRAIT</h3>
-                    <div class="info-grid">
+                    <div>
                         <div class="info-text">
                             <p>If you would like to stay updated through the creation of your portrait then I can send
                                 you
@@ -194,19 +172,13 @@
                             <p>Once you are 100% happy with the final drawing, the remaining 50% payment can be made.
                             </p>
                         </div>
-                        <div class="info-image">
-                            <img src="assets/images/wildlife-fish.png" alt="Work in Progress Art">
-                        </div>
                     </div>
                 </div>
 
                 <!-- Step 5 (Image Left) -->
-                <div class="step-block">
+                <div class="step-block text-center" style="max-width: 800px; margin: 0 auto 60px auto;">
                     <h3 class="step-title">STEP 5 : DELIVERY & REVIEW</h3>
-                    <div class="info-grid">
-                        <div class="info-image">
-                            <img src="assets/images/wildlife-books.png" alt="Books and Bird">
-                        </div>
+                    <div>
                         <div class="info-text">
                             <p><strong>DELIVERY:</strong> Once I have received your final payment, I will package your
                                 drawing
@@ -254,7 +226,7 @@
 
             <section id="contact" class="text-center commission-cta">
                 <h3>READY TO BOOK?</h3>
-                <a href="mailto:hello@shani.com" class="btn-primary">EMAIL ME TO BOOK</a>
+                <a href="mailto:shanimp@gmail.com" class="btn-primary">EMAIL ME TO BOOK</a>
             </section>
         </div>
     </main>
@@ -267,7 +239,7 @@
                 <ul>
                     <li><a href="shop.html">Shop All</a></li>
                     <li><a href="commissions.html">Commissions</a></li>
-                    <li><a href="gallery.html">Portrait Gallery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -280,7 +252,7 @@
             </div>
             <div class="footer-col">
                 <h4>contact</h4>
-                <p>hello@shani.com</p>
+                <p>shanimp@gmail.com</p>
                 <div class="social-icons">
                     <a href="#">FB</a>
                     <a href="#">IG</a>
@@ -289,6 +261,19 @@
             </div>
         </div>
     </footer>
+    <!-- Instagram Floating Button -->
+    <a href="https://instagram.com/"
+        class="instagram-float fixed bottom-24 right-6 md:bottom-28 md:right-8 w-16 h-16 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 z-50 hover:scale-110"
+        target="_blank" aria-label="Visit our Instagram">
+        <i class="fab fa-instagram text-3xl"></i>
+    </a>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/91950000000"
+        class="whatsapp-float fixed bottom-6 right-6 md:bottom-8 md:right-8 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 z-50 animate-bounce"
+        target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
 </body>
 
 </html>
